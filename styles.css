@@ -1,0 +1,94 @@
+/* Reset some default browser styles */
+body, h1, h2, ul, li, p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set a background image for the entire page */
+body {
+  background-image: url('image2.jpg'); /* Replace 'purple-flower.jpg' with the actual image file path */
+  background-size: cover;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+/* Basic styling for the header */
+header {
+  background-color: #007BFF;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+/* Styling for buttons */
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 10px;
+  background-color: #FFA500;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.btn:hover {
+  background-color: #FF6347;
+}
+
+/* Styling for forms and form elements */
+#signup-form, #login-form {
+  margin: 80px auto;
+  max-width: 400px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+  border: 2px solid #800080; /* Purple border */
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #333;
+}
+
+input[type="text"],
+input[type="password"] {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Styling for the "Back to Home" link */
+#back-to-home {
+  text-align: center;
+  margin-top: 20px;
+}
+
+a {
+  color: #007BFF;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Styling for the footer */
+footer {
+  background-color: #007BFF;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+}

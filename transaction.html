@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>View Transactions - Student Financial Management</title>
+    <style>
+        /* Additional CSS for aesthetics */
+        body {
+            background-color: #f3f5f8;
+            font-family: Arial, sans-serif;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #007BFF;
+        }
+
+        .btn {
+            display: block;
+            width: 100%;
+            margin: 20px 0;
+            padding: 15px;
+            font-size: 18px;
+            text-align: center;
+            text-decoration: none;
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+        }
+
+        /* Styling for transaction table */
+        .transaction-table {
+            margin-top: 30px;
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .transaction-table th {
+            background-color: #007BFF;
+            color: #fff;
+            font-size: 18px;
+            padding: 10px;
+            text-align: left;
+        }
+
+        .transaction-table td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            font-size: 16px;
+        }
+
+        .transaction-table tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>View Transactions</h1>
+    </header>
+    <div class="container">
+        <table class="transaction-table">
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Description</th>
+                    <th>Amount</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>01/10/2024</td>
+                    <td>Payment</td>
+                    <td>$100.00</td>
+                </tr>
+                <tr>
+                    <td>12/30/2023</td>
+                    <td>Deposit</td>
+                    <td>$50.00</td>
+                </tr>
+                <tr>
+                    <td>12/15/2023</td>
+                    <td>Withdrawal</td>
+                    <td>$25.00</td>
+                </tr>
+                <!-- Add more transactions here -->
+            </tbody>
+        </table>
+        <a href="dashboard.html" class="btn">Back to Dashboard</a>
+    </div>
+    <footer>
+        <p>&copy; 2023 Student Financial Management. All rights reserved.</p>
+    </footer>
+</body>
+</html>

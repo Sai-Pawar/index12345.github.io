@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Login - Student Financial Management</title>
+</head>
+<body>
+    <header>
+        <h1>Login</h1>
+    </header>
+    <div id="login-form">
+        <form action="#" method="post" onsubmit="return login()">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required><br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required><br>
+
+            <button type="submit" class="btn">Login</button>
+        </form>
+    </div>
+    <footer>
+        <p>&copy; 2023 Student Financial Management</p>
+    </footer>
+
+    <script>
+        function login() {
+            // Get the values of the username and password fields
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+
+            // Check if both fields are filled
+            if (username.trim() === "" || password.trim() === "") {
+                alert("Please fill in both username and password fields.");
+                return false; // Prevent form submission
+            }
+
+            // Add your login validation logic here
+            // For simplicity, let's assume the login is successful
+            // You can replace this with your actual login validation logic
+
+            // Redirect to dashboard if login is successful
+            window.location.href = "dashboard.html";
+            return false; // Prevents the form from actually submitting
+        }
+    </script>
+</body>
+</html>

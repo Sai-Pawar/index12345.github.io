@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Financial Summary - Student Financial Management</title>
+    <style>
+        /* Additional CSS for aesthetics */
+        body {
+            background-color: #f3f5f8;
+            font-family: Arial, sans-serif;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #007BFF;
+        }
+
+        .btn {
+            display: block;
+            width: 100%;
+            margin: 20px 0;
+            padding: 15px;
+            font-size: 18px;
+            text-align: center;
+            text-decoration: none;
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+        }
+
+        /* Styling for financial summary */
+        .financial-summary {
+            margin-top: 30px;
+        }
+
+        .summary-card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .summary-card h3 {
+            color: #007BFF;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .summary-card p {
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Financial Summary</h1>
+    </header>
+    <div class="container">
+        <section class="financial-summary">
+            <div class="summary-card">
+                <h3>Current Balance</h3>
+                <p>$12,345.67</p>
+            </div>
+            <div class="summary-card">
+                <h3>Recent Transactions</h3>
+                <p>
+                    <strong>Transaction 1:</strong> $100.00 (Payment)<br>
+                    <strong>Transaction 2:</strong> $50.00 (Deposit)<br>
+                    <strong>Transaction 3:</strong> $25.00 (Withdrawal)
+                </p>
+            </div>
+            <div class="summary-card">
+                <h3>Upcoming Bills</h3>
+                <p>
+                    <strong>Bill 1:</strong> $200.00 (Due on 01/15/2024)<br>
+                    <strong>Bill 2:</strong> $75.00 (Due on 02/05/2024)
+                </p>
+            </div>
+        </section>
+        <a href="dashboard.html" class="btn">Back to Dashboard</a>
+    </div>
+    <footer>
+        <p>&copy; 2023 Student Financial Management. All rights reserved.</p>
+    </footer>
+</body>
+</html>

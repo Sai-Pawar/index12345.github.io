@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Dashboard - Student Financial Management</title>
+    <style>
+        /* Additional CSS for button alignment */
+        .button-container {
+            text-align: center;
+        }
+
+        /* CSS to style the buttons */
+        .btn-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .btn {
+            width: 80%; /* Set a maximum width for the buttons */
+            margin: 10px auto; /* Center-align and add spacing */
+            padding: 15px; /* Add padding for larger buttons */
+            font-size: 18px; /* Increase font size (adjust as needed) */
+            text-align: center;
+            text-decoration: none;
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Dashboard</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Financial Management Options</h2>
+            <!-- Button container for centering -->
+            <div class="button-container">
+                <!-- Utilize flexbox to align buttons vertically -->
+                <div class="btn-container">
+                    <a href="transaction.html" class="btn">View Transactions</a>
+                    <a href="billing.html" class="btn">Billing Information</a>
+                    <a href="apply.html" class="btn">Apply for Financial Aid</a>
+                    <a href="summary.html" class="btn">Financial Summary</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Student Financial Management</p>
+    </footer>
+</body>
+</html>

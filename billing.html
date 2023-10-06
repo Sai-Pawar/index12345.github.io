@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Billing Information - Student Financial Management</title>
+    <style>
+        /* Additional CSS for aesthetics */
+        body {
+            background-color: #f3f5f8;
+            font-family: Arial, sans-serif;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #007BFF;
+        }
+
+        .btn {
+            display: block;
+            width: 100%;
+            margin: 20px 0;
+            padding: 15px;
+            font-size: 18px;
+            text-align: center;
+            text-decoration: none;
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+        }
+
+        /* Styling for billing table */
+        .billing-table {
+            margin-top: 30px;
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .billing-table th {
+            background-color: #007BFF;
+            color: #fff;
+            font-size: 18px;
+            padding: 10px;
+            text-align: left;
+        }
+
+        .billing-table td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            font-size: 16px;
+        }
+
+        .billing-table tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        /* Styling for payment dropdown */
+        .payment-dropdown {
+            display: none;
+            position: absolute;
+            background-color: #fff;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .payment-dropdown button {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            width: 100%;
+            text-align: left;
+        }
+
+        .payment-dropdown button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Billing Information</h1>
+    </header>
+    <div class="container">
+        <table class="billing-table">
+            <thead>
+                <tr>
+                    <th>Bill Name</th>
+                    <th>Amount</th>
+                    <th>Due Date</th>
+                    <th>Payment Options</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Bill 1</td>
+                    <td>$200.00</td>
+                    <td>01/15/2024</td>
+                    <td>
+                        <button class="payment-btn" onclick="togglePaymentDropdown(1)">Pay &#9660;</button>
+                        <div id="paymentDropdown1" class="payment-dropdown">
+                            <button>Paytm</button>
+                            <button>GPay</button>
+                            <button>PhonePe</button>
+                            <button>PayPal</button>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Bill 2</td>
+                    <td>$75.00</td>
+                    <td>02/05/2024</td>
+                    <td>
+                        <button class="payment-btn" onclick="togglePaymentDropdown(2)">Pay &#9660;</button>
+                        <div id="paymentDropdown2" class="payment-dropdown">
+                            <button>Paytm</button>
+                            <button>GPay</button>
+                            <button>PhonePe</button>
+                            <button>PayPal</button>
+                        </div>
+                    </td>
+                </tr>
+                <!-- Add more bills here -->
+            </tbody>
+        </table>
+        <a href="dashboard.html" class="btn">Back to Dashboard</a>
+    </div>
+    <footer>
+        <p>&copy; 2023 Student Financial Management. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function togglePaymentDropdown(billNumber) {
+            var dropdown = document.getElementById("paymentDropdown" + billNumber);
+            if (dropdown.style.display === "block") {
+                dropdown.style.display = "none";
+            } else {
+                dropdown.style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Student Financial Management</title>
+    <style>
+        /* Additional CSS for button alignment */
+        .button-container {
+            text-align: center;
+        }
+
+        /* CSS to style the buttons */
+        .btn-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .btn {
+            width: 80%; /* Set a maximum width for the buttons */
+            margin: 10px auto; /* Center-align and add spacing */
+            padding: 15px; /* Add padding for larger buttons */
+            font-size: 18px; /* Increase font size (adjust as needed) */
+            text-align: center;
+            text-decoration: none;
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Student Financial Management</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Welcome</h2>
+            <p>Please select an option:</p>
+            <!-- Button container for centering -->
+            <div class="button-container">
+                <!-- Utilize flexbox to align buttons vertically -->
+                <div class="btn-container">
+                    <a href="login.html" class="btn">Login</a>
+                    <a href="signup.html" class="btn">Sign Up</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Student Financial Management</p>
+    </footer>
+</body>
+</html>
